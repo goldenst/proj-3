@@ -1,4 +1,4 @@
-import '../components/styles/Videoitem.css';
+import './Videoitem.css';
 import React from 'react';
 
 

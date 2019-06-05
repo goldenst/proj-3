@@ -43,12 +43,11 @@ router.post(
 // cloudanrt url goes in here
       const newPost = new Post({
         text: req.body.text,
-        imageUrls: r.data.url,
+        url: "res from cloudanry",
         name: user.name,
         avatar: user.avatar,
         user: req.user.id
       });
-      
       const post = await newPost.save();
 
       res.json(post);
@@ -58,20 +57,6 @@ router.post(
     }
   }
 );
-
-//// sohill stuff
-// app.post("/api/url", function (req, res) {
-//   console.log("body:",req.body.url);
-
-//   Post.findOneAndUpdate(
-//     {userId: userID},
-//     {$push: {imageUrls: [res.body.url]}},
-//     {safe: true, upsert: true},
-//     function(err, model) {
-//         console.log(err);
-//         console.log("Model:",model);
-//     }
-// );
 
 // @Route   GET api/posts
 // @Desc    Get all posts
@@ -230,7 +215,6 @@ router.post(
     }
   }
 );
-
 
 // @Route   DELETE api/posts/comment/:id/:comment_id
 // @Desc    Delete a comment

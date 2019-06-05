@@ -49,6 +49,7 @@ function SearchForm(props) {
         <button type="submit" onClick={props.handleFormSubmit} className="btn btn-dark">
           Submit
         </button>
+        console.log('submitted')
       </div>
     </form>
   );

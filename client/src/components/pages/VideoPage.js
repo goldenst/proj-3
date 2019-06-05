@@ -3,7 +3,6 @@ import SearchBar from '../SearchBar';
 import youtube from '../../apis/youtube';
 import VideoList from '../VideoList';
 import VideoDetail from '../VideoDetail';
-//import "../styles/Videoitem.css";
 
 
 class VideoPage extends React.Component {

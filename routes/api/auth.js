@@ -57,7 +57,6 @@ router.post('/',
 
       if (!user) {
         console.log('failure2')
-        
         return res
         
           .status(400)
@@ -72,7 +71,6 @@ router.post('/',
 
       if (!isMatch) {
         console.log('failure3')
-        
         return res
           .status(400)
           .json({

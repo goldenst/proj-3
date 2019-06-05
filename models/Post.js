@@ -6,10 +6,6 @@ const PostSchema = new Schema ({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'users'
   },
-  imageUrls: { 
-    type: String,
-    required: false 
-  },
   text: {
     type: String,
     required: true
